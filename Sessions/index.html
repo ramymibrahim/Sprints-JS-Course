@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="print"></div>
+    <input type="text" value="Ahmed" id="first-name" />
+    <input type="text" value="Ibrahim" id="last-name" />
+    <input type="text" id="add" />
+    <button onclick="showMessage()">Show Message</button>
+    <fieldset>
+      <legend>Calculator</legend>
+      <input type="number" id="first-number" placeholder="First Number" />
+      <input type="number" id="second-number" placeholder="Second Number" />
+      <input type="number" id="result" placeholder="Result" />
+      <button onclick="add()">Add</button>
+      <button onclick="subtract()">Subtract</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>Does he/she reach pension age?</legend>
+      <input type="text" id="gender" placeholder="Gender" />
+      <input type="text" id="age" placeholder="Age" />
+      <button onclick="pension()">Show</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>Grade Calculator</legend>
+      <input type="number" id="grade" placeholder="Grade" />
+      <button onclick="printGrade()">Get Grade</button>
+    </fieldset>
+    <script src="./js/script.js" type="text/javascript"></script>
+  </body>
+</html>
