@@ -1,0 +1,3 @@
+1. Complete Nav bar
+2. Implement Horoscope function
+3. Implement Validate Inputs function in (cart.html) page
