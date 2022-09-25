@@ -105,3 +105,110 @@ function printGrade() {
     console.log("Fail");
   }
 }
+
+function displayStudentTable() {
+  document.getElementById("tbody").innerHTML +=
+    "<tr><td>" +
+    "1" +
+    "</td><td>" +
+    names[0] +
+    "</td><td>" +
+    grades[0] +
+    "</td></tr>";
+  document.getElementById("tbody").innerHTML +=
+    "<tr><td>" +
+    "2" +
+    "</td><td>" +
+    names[1] +
+    "</td><td>" +
+    grades[1] +
+    "</td></tr>";
+  document.getElementById("tbody").innerHTML +=
+    "<tr><td>" +
+    "3" +
+    "</td><td>" +
+    names[2] +
+    "</td><td>" +
+    grades[2] +
+    "</td></tr>";
+}
+
+function displayStudentTableWithLoop() {
+  for (let i = 0; i < names.length; i++) {
+    document.getElementById("tbody").innerHTML +=
+      "<tr><td>" +
+      (i + 1) +
+      "</td><td>" +
+      names[i] +
+      "</td><td>" +
+      grades[i] +
+      "</td></tr>";
+  }
+
+  let password = "";
+  while (password != "") {
+    password = prompt("Please enter your password:");
+  }
+}
+
+function displayStudentTableWithWhileLoop() {
+  let i = 0;
+  while (i < names.length) {
+    document.getElementById("tbody").innerHTML +=
+      "<tr><td>" +
+      (i + 1) +
+      "</td><td>" +
+      names[i] +
+      "</td><td>" +
+      grades[i] +
+      "</td></tr>";
+    i++;
+  }
+}
+
+let names = ["Ramy", "Ibrahim", "Sayed"];
+let grades = [70, 80, 90];
+
+let students = [
+  ["Ramy", "Ibrahim", 90, 34, true],
+  ["Hamdy", "Sayed", 96, 30, true],
+];
+
+let studentsObjArr = [
+  {
+    firstName: "Ramy",
+    lastName: "Ibrahim",
+    grade: 90,
+    age: 34,
+    isMale: true,
+  },
+  {
+    firstName: "Hamdy",
+    lastName: "Sayed",
+    grade: 96,
+    age: 30,
+    isMale: true,
+  },
+];
+
+function fillTableWithObjects() {
+  for (let i = 0; i < studentsObjArr.length; i++) {
+    document.getElementById("tbody").innerHTML +=
+      "<tr><td>" +
+      (i + 1) +
+      "</td><td>" +
+      studentsObjArr[i].firstName +
+      " " +
+      studentsObjArr[i].lastName +
+      "</td><td>" +
+      studentsObjArr[i].grade +
+      "</td></tr>";
+  }
+}
+//let students2
+//JSON JavaScript Object Notation
+/*
+XML
+<firstName>Ramy</firstName>
+<lastName>Ibrahim</lastName>
+ */
